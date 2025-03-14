@@ -1,0 +1,129 @@
+/* Estilo  */
+body {
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    background-color: #f0f0f5;
+    color: #333;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #444;
+  }
+  
+  section {
+    margin-bottom: 25px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin: 5px 0;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  input, select {
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /*  Contador  */
+  #counter {
+    font-size: 1.8em;
+    margin-left: 15px;
+  }
+  
+  /*  Texto digitado  */
+  #charCount {
+    margin-top: 8px;
+    font-weight: bold;
+  }
+  
+   
+  #output {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  /*  Formas  */
+  .shape {
+    display: inline-block;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  /* Quadrado */
+  .square {
+    width: 100px;
+    height: 100px;
+    background: #3498db;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Retângulo */
+  .rectangle {
+    width: 160px;
+    height: 100px;
+    background: #e74c3c;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Triângulo */
+  .triangle {
+    width: 0;
+    height: 0;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-bottom: 100px solid #f1c40f;
+  }
+  
+  /* Losango */
+  .diamond {
+    width: 100px;
+    height: 100px;
+    background: #9b59b6;
+    transform: rotate(45deg);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /*  Parágrafos adicionados  */
+  #output p {
+    padding: 10px;
+    background: #ecf0f1;
+    border-left: 5px solid #3498db;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  

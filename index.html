@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Interativa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Página Interativa</h1>
+
+  <section>
+    <h2>Contador de Cliques</h2>
+    <button id="btnIncrement">Incrementar</button>
+    <span id="counter">0</span>
+    <button id="btnDecrement">Decrementar</button>
+  </section>
+
+  <section>
+    <h2>Adicionar Texto Dinâmico</h2>
+    <input type="text" id="textInput" placeholder="Digite uma mensagem">
+    <div id="charCount">Caracteres (sem espaços): 0</div>
+  </section>
+
+  <section>
+    <h2>Adicionar Novo Item (Forma)</h2>
+    <select id="shapeType">
+      <option value="square">Quadrado</option>
+      <option value="rectangle">Retângulo</option>
+      <option value="triangle">Triângulo</option>
+      <option value="diamond">Losango</option>
+    </select>
+    <button id="addShape">Adicionar Forma</button>
+  </section>
+
+  <section>
+    <button id="reset">Resetar</button>
+  </section>
+
+  <div id="output"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,10 +1,10 @@
-
+// === Variáveis do contador ===
 const btnIncrement = document.getElementById('btnIncrement');
 const btnDecrement = document.getElementById('btnDecrement');
 const spanCounter = document.getElementById('counter');
 let counter = 0;
 
-// Botões 
+// === Botões de controle ===
 const textInput = document.getElementById('textInput');
 const charCount = document.getElementById('charCount');
 const outputDiv = document.getElementById('output');
@@ -12,13 +12,13 @@ const shapeTypeSelect = document.getElementById('shapeType');
 const addShapeBtn = document.getElementById('addShape');
 const resetBtn = document.getElementById('reset');
 
-//  Incrementar contador 
+// === Incrementar contador ===
 btnIncrement.addEventListener('click', () => {
   counter++;
   spanCounter.textContent = counter;
 });
 
-//   Contador 0
+// === Decrementar contador com limite zero e recarregar ===
 btnDecrement.addEventListener('click', () => {
   if (counter > 0) {
     counter--;
@@ -29,13 +29,13 @@ btnDecrement.addEventListener('click', () => {
   }
 });
 
-// Contar caracteres 
+// === Contar caracteres sem espaços em tempo real ===
 textInput.addEventListener('input', () => {
   const textWithoutSpaces = textInput.value.replace(/\s/g, '');
   charCount.textContent = `Caracteres (sem espaços): ${textWithoutSpaces.length}`;
 });
 
-// Adicionar parágrafo 
+// === Adicionar parágrafo ao pressionar ENTER ===
 textInput.addEventListener('keypress', (e) => {
   if (e.key === 'Enter' && textInput.value.trim() !== '') {
     const p = document.createElement('p');
@@ -46,7 +46,7 @@ textInput.addEventListener('keypress', (e) => {
   }
 });
 
-// Adicionar
+// === Adicionar forma geométrica ===
 addShapeBtn.addEventListener('click', () => {
   const selectedShape = shapeTypeSelect.value;
   const shapeDiv = document.createElement('div');
@@ -54,7 +54,7 @@ addShapeBtn.addEventListener('click', () => {
   outputDiv.appendChild(shapeDiv);
 });
 
-//  Reset 
+// === Reset geral: zera contador, limpa textos e formas ===
 resetBtn.addEventListener('click', () => {
   counter = 0;
   spanCounter.textContent = counter;
